@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kristian Loumann</title>
+  <link rel="icon" href="icon.jpg" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #111;
+      background-color: #fff;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 40px 30px;
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+      font-weight: 500;
+      font-size: 21px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      transition: color 0.3s ease;
+      margin-left: 30px;
+    }
+
+    nav a:hover {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .nav-name {
+      font-size: 26px;
+      font-weight: 510;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-item {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .gallery-item-title {
+      margin-top: 8px;
+      font-weight: 300;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="nav-name">Kristian Loumann</div>
+      <div>
+        <a href="index.html">Works</a>
+        <a href="cv.html">CV</a>
+      </div>
+    </nav>
+
+    <div class="gallery">
+      <a href="The Leash/theleash.html" class="gallery-item">
+        <img src="The Leash/theleash1.jpg" alt="The Leash" />
+        <div class="gallery-item-title">The Leash, 2025</div>
+      </a>
+
+      <a href="Control/control.html" class="gallery-item">
+        <img src="Control/control1.jpg" alt="Control" />
+        <div class="gallery-item-title">Control, 2022</div>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
