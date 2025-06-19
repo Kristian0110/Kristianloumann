@@ -60,28 +60,31 @@
     }
 
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 30px;
+    column-count: 2;
+    column-gap: 30px;
     }
 
     .gallery-item {
-      text-decoration: none;
-      color: inherit;
-      display: block;
+    break-inside: avoid;
+    margin-bottom: 30px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
     }
 
     .gallery-item img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      display: block;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
     }
 
     .gallery-item-title {
-      margin-top: 8px;
-      font-weight: 300;
-      font-size: 15px;
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 15px;
+    }
+
     }
   </style>
 </head>
