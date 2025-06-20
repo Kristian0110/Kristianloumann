@@ -48,12 +48,16 @@
       font-weight: 510;
     }
 
-    .work-image {
+    .work-images {
+    column-count: 2;
+    column-gap: 30px;
+    }
+    
+    .work-images img {
       width: 100%;
       height: auto;
       margin-bottom: 30px;
-      column-count: 2;
-      column-gap: 30px;
+      display: block;
     }
 
     .work-title {
@@ -101,13 +105,15 @@
     <p class="work-description">
       A symbiosis between materials and body is activated through an exploration of nature’s transformations. Grass roll, charcoal and plastic can meet the artist’s body as a performative link, where sensuality and manipulation merge. The process challenges the boundaries between the organic and the constructed, the physical and the mental. Through an intuitive and open choreography, the viewer enters a space where control and chance balance in a poetic dialogue about humanity’s place within nature’s systems.
     </p>
+    
+<div class="work-images">
+    <img src="TFTP1.jpeg" alt="TFTP1"/>
 
-    <img src="TFTP1.jpeg" alt="TFTP1" class="work-image" />
+    <img src="TFTP2.jpeg" alt="TFTP2"/>
 
-    <img src="TFTP2.jpeg" alt="TFTP2" class="work-image" />
-
-    <img src="TFTP3.jpg" alt="TFTP3" class="work-image" />
-
+    <img src="TFTP3.jpg" alt="TFTP3"/>
+</div>
+    
   </div>
 </body>
 </html>
