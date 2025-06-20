@@ -51,19 +51,16 @@
     .work-images-columns {
     column-count: 2;
     column-gap: 30px;
-    margin-bottom: 30px;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
     }
 
     .work-images-columns img {
-    width: 100%;
+    width: 350px;
     display: block;
     margin-bottom: 30px;
-    }
-
-    .work-images-full img {
-    width: 100%;
-    display: block;
-    margin-bottom: 30px;
+    break-inside: avoid;
     }
     
     .work-title {
@@ -110,19 +107,15 @@
     <p class="location">Skjold Contemporary</p>
     <p class="work-description">
     </p>
-    
-<div class="work-images-columns">
-  <img src="TFTP2.jpeg" alt="TFTP1" />
-  <img src="TFTP4.jpg" alt="TFTP2" />
-</div>
 
-<div class="work-images-full">
-  <img src="TFTP3.jpg" alt="TFTP3" />
-  <img src="TFTP5.jpeg" alt="TFTP5" />
-  <img src="TFTP6.JPG" alt="TFTP6" />
-  <img src="TFTP1.jpeg" alt="TFTP1" />
-</div>
-
+  <div class="work-images-columns">
+    <img src="TFTP2.jpeg" alt="TFTP1" />
+    <img src="TFTP5.jpeg" alt="TFTP5" />
+    <img src="TFTP6.JPG" alt="TFTP6" />
+    <img src="TFTP4.jpg" alt="TFTP2" />
+    <img src="TFTP3.jpg" alt="TFTP3" />
+    <img src="TFTP1.jpeg" alt="TFTP1" />
+  </div>
     
   </div>
 </body>
