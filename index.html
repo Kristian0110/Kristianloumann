@@ -2,120 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kristian Loumann</title>
-
+  
   <script data-goatcounter="https://kristianloumann.goatcounter.com/count"
     async src="//gc.zgo.at/count.js"></script>
 
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
   <link rel="icon" href="icon.jpg" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: 'Times';
+      font-family: 'Times New Roman', Times, serif;
       font-weight: 300;
       font-size: 18px;
       line-height: 1.6;
       color: #111;
       background-color: #fdfdfb;
-    }
+      }
 
-    html, body {
-    overscroll-behavior: none;
-    }
-    
-    .container {
-      max-width: 900px;
-      padding: 40px 0;
-      margin: 0 auto;
-    }
-
-    nav {
+      html, body {
+      overscroll-behavior: none;
+      }
+      
+      nav {
       background-color: white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       width: 100%;
-      padding: 10px 0;
-      margin-bottom: 15px;
-    }
+      font-family: 'Times';
+      padding: 10px 10px 0 0;
+      }
 
-    .nav-wrapper {
-      max-width: 900px;
+      .nav-wrapper {
+      max-width: 100%;
       margin: 0 auto;
-      padding: 0 30px;
+      padding: 0 20px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: flex-start;
       font-weight: 500;
       font-size: 21px;
+      gap: 30px;
+      }
+
+    .nav-name {
+      font-size: 16px;
+      font-weight: 510;
+    }
+
+    .nav-wrapper > div:last-child {
+      display: flex;
+      gap: 30px;
     }
 
     nav a {
       text-decoration: none;
       color: #000;
-      transition: color 0.05s ease;
-      margin-left: 20px;
+      font-size: 16px;
+      padding: 1px 4px;
+      transition: box-shadow 0.2s ease;
+
     }
 
     nav a:hover {
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 0.7px black;
     }
 
-    .nav-name {
-      font-size: 22px;
-      font-weight: 510;
-    }
-
-    h1 {
-      font-weight: 600;
-      font-size: 36px;
-      margin-top: 0;
-      margin-bottom: 40px;
-    }
 
     .gallery {
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto;
-      position: relative;
-    }
-
-    .grid-sizer {
-      width: 49.8%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 55px 5px;
+      padding: 40px 20px;
     }
 
     .gallery-item {
-      width: 49.8%;
-      margin-bottom: 50px;
-      break-inside: avoid;
-      text-decoration: none;
-      color: inherit;
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-decoration: none;
+      color: inherit;
     }
 
     .gallery-item img {
-      width: 80%;
-      height: auto;
-      display: block;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s ease;
+    width: 465px;
+    height: 325.5px;
+    object-fit: cover;
+    display: block;
+    transition: box-shadow 0.2s ease;
     }
 
+
     .gallery-item img:hover {
-      box-shadow: 0 0 0 0.8px black;
+      box-shadow: 0 0 0 0.7px black;
     }
 
     .gallery-item-title {
-      margin-top: 5px;
+      margin-top: 1px;
       font-weight: 300;
-      font-size: 15px;
-      text-decoration: none;
-      color: #000;
-      width: 80%;
+      font-size: 14px;
+      max-width: 465px;
+      width: 100%;
       text-align: left;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -131,47 +134,33 @@
     </div>
   </nav>
 
-  <div class="container">
-    <div class="gallery" id="masonry-gallery">
-      <div class="grid-sizer"></div>
+  <div class="gallery">
+    <a href="Post Awareness Confusions/postawarenessconfusions.html" class="gallery-item">
+      <img src="Post Awareness Confusions/SECONDpac5.jpg" alt="Post Awareness Confusions" />
+      <div class="gallery-item-title">Post Awareness Confusions, 2025</div>
+    </a>
 
-      <a href="Post Awareness Confusions/postawarenessconfusions.html" class="gallery-item">
-        <img src="Post Awareness Confusions/SECONDpac5.jpg" alt="Post Awareness Confusions" />
-        <div class="gallery-item-title">Post Awareness Confusions, 2025</div>
-      </a>
+    <a href="Synapse/synapse.html" class="gallery-item">
+      <img src="Synapse/synapse3.jpg" alt="Synapse" />
+      <div class="gallery-item-title">Synapse, 2025</div>
+    </a>
 
-      <a href="Synapse/synapse.html" class="gallery-item">
-        <img src="Synapse/synapse3.jpg" alt="Synapse" />
-        <div class="gallery-item-title">Synapse, 2025</div>
-      </a>
+    <a href="The Leash/theleash.html" class="gallery-item">
+      <img src="The Leash/theleash1.jpg" alt="The Leash" />
+      <div class="gallery-item-title">The Leash, 2025</div>
+    </a>
 
-      <a href="The Leash/theleash.html" class="gallery-item">
-        <img src="The Leash/theleash1.jpg" alt="The Leash" />
-        <div class="gallery-item-title">The Leash, 2025</div>
-      </a>
+    <a href="TFTP/TFTP.html" class="gallery-item">
+      <img src="TFTP/TFTP3.jpg" alt="Transparency for The Public" />
+      <div class="gallery-item-title">Transparency for The Public, 2024</div>
+    </a>
 
-      <a href="TFTP/TFTP.html" class="gallery-item">
-        <img src="TFTP/TFTP4.jpg" alt="TFTP" />
-        <div class="gallery-item-title">Transparency for The Public, 2024</div>
-      </a>
+    <a href="Control/control.html" class="gallery-item">
+      <img src="Control/control1.jpg" alt="Control" />
+      <div class="gallery-item-title">Control, 2022</div>
+    </a>
 
-      <a href="Control/control.html" class="gallery-item">
-        <img src="Control/control1.jpg" alt="Control" />
-        <div class="gallery-item-title">Control, 2022</div>
-      </a>
-    </div>
   </div>
-
-  <script>
-    window.addEventListener('load', function () {
-      new Masonry('#masonry-gallery', {
-        itemSelector: '.gallery-item',
-        columnWidth: '.grid-sizer',
-        gutter: 2,
-        percentPosition: true
-      });
-    });
-  </script>
 
 </body>
 </html>
