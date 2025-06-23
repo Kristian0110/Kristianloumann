@@ -2,117 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kristian Loumann</title>
 
   <script data-goatcounter="https://kristianloumann.goatcounter.com/count"
   async src="//gc.zgo.at/count.js"></script>
   
   <link rel="icon" href="icon.jpg" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
   <style>
-    body {
-      margin: 0;
-      font-family: 'Times';
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 1.6;
-      color: #111;
-      background-color: #fdfdfb;
+    
+  body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #111;
+  background-color: #fdfdfb;
+  }
+
+  html, body {
+  overscroll-behavior: none;
+  }
+
+  nav {
+    background-color: white;
+    width: 100%;
+    font-family: 'Times';
+    padding: 10px 10px 0 0;
+    box-sizing: border-box;
+  }
+
+  nav > div {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: 21px;
+    gap: 30px;
+  }
+
+  .nav-name {
+    font-size: 16px;
+    font-weight: 510;
+  }
+
+  nav > div > div:last-child {
+    display: flex;
+    gap: 30px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 1px 4px;
+      transition: box-shadow 0.2s ease;
+  }
+
+  nav a:hover {
+    box-shadow: 0 0 0 0.7px black;
     }
 
-    html, body {
-    overscroll-behavior: none;
-    }
+  .container {
+    max-width: 100%;
+    padding: 40px 20px 0 20px;
+    margin: 0 auto;
+  }
 
-    nav {
-      background-color: white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      padding: 10px 30px;
-      box-sizing: border-box;
-      position: relative;
-      margin-bottom: -15px;
-    }
-
-    nav > div {
-      max-width: 900px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 500;
-      font-size: 21px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #000;
-      transition: color 0.05s ease;
-      margin-left: 20px;
-    }
-
-    nav a:hover {
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-name {
-      font-size: 22px;
-      font-weight: 510;
-    }
-
-    .container {
-      max-width: 900px;
-      padding: 40px 30px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-weight: 600;
-      font-size: 36px;
-      margin-top: 0;
-      margin-bottom: 24px;
-    }
-
-    h4 {
-      font-weight: 600;
-      font-size: 18px;
-      margin-bottom: 12px;
-      margin-top: 36px;
-    }
-
-    p {
-      font-size: 16px;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .bio {
-      font-size: 16px;
-      margin-bottom: -20px;
-    }
-
-    .contact-info a {
-      color: inherit;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .GEN-Z a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .bold-text {
+  h1 {
     font-weight: 600;
-    }
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
 
-    .IG {
-    margin-top: -15px;
-    }
+  h4 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-top: 36px;
+  }
 
-    .bio1 {
+  p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .bio {
+    font-size: 16px;
+    margin-bottom: -20px;
+  }
+
+  .contact-info a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .GEN-Z a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .bold-text {
+    font-weight: 600;
+  }
+
+  .IG, .bio1 {
     margin-top: -15px;
-    }
+  }
+
 
   </style>
 </head>
@@ -129,7 +134,7 @@
 
   <div class="container">
     <p class="bio">Kristian Loumann, b. 2001</p>
-    <p class="bio">Based in Copenhagen</p>
+    <p class="bio">Copenhagen, Denmark</p>
     <p class="contact-info" class="bio">
       <a href="mailto:kristian.loumann@gmail.com">kristian.loumann@gmail.com</a></p>
     <p class="IG">+45 3048 8917</p>
