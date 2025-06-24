@@ -2,117 +2,156 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kristian Loumann</title>
 
   <script data-goatcounter="https://kristianloumann.goatcounter.com/count"
-  async src="//gc.zgo.at/count.js"></script>
-  
+    async src="//gc.zgo.at/count.js"></script>
+
   <link rel="icon" href="../icon.jpg" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       font-weight: 300;
       font-size: 18px;
       line-height: 1.6;
       color: #111;
-      background-color: #fff;
+      background-color: #fdfdfb;
     }
 
-    .container {
-      max-width: 900px;
-      padding: 40px 30px;
-      margin: 0 auto;
+    html, body {
+      overscroll-behavior: none;
     }
 
     nav {
+      background-color: white;
+      width: 100%;
+      font-family: 'Times';
+      padding: 10px 10px 0 0;
+      box-sizing: border-box;
+    }
+
+    nav > div {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 60px;
-      font-weight: 600;
+      justify-content: flex-start;
+      font-weight: 500;
       font-size: 21px;
+      gap: 30px;
+    }
+
+    .nav-name {
+      font-size: 16px;
+      font-weight: 510;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-icon {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    nav > div > div:last-child {
+      display: flex;
+      gap: 30px;
     }
 
     nav a {
       text-decoration: none;
-      color: #111;
-      transition: color 0.3s ease;
-      margin-left: 30px;
+      color: #000;
+      font-size: 16px;
+      padding: 1px 4px;
+      transition: box-shadow 0.2s ease;
     }
 
     nav a:hover {
-      color: #555;
-      text-decoration: none;
+      box-shadow: 0 0 0 0.7px black;
     }
 
-    .nav-name {
-      font-size: 26px;
-      font-weight: 510;
+    .container {
+      max-width: 100%;
+      padding: 40px 20px 0 20px;
+      margin: 0 auto;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+      align-items: flex-start;
+    }
+
+    .left-column {
+      min-width: 250px;
+      max-width: 500px;
+    }
+
+    .right-column {
+      flex: 1;
+      padding-left: 85px;
+      font-size: 14px;
+      margin-top: -18px;
     }
 
     .work-image {
-      width: 100%;
+      width: 130%;
       height: auto;
-      margin-bottom: 30px;
-    }
-
-    .work-title {
-      font-size: 18px;
       margin-bottom: 0px;
-    } 
-
-    .work-materials {
-      font-size: 18px;
-      margin-top: 0;
-    } 
-
-    .performed-with {
-      font-size: 14px;
-      margin-top: -15px;
-      margin-bottom: 20px;
     }
 
-    .work-description {
-      font-size: 14px;
-      margin-top: 20px;
-      margin-bottom: 30px;
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .left-column {
+        max-width: 100%;
+      }
+
+      .right-column {
+        padding-left: 0;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <div class="nav-name">Kristian Loumann</div>
-      <div>
-        <a href="../index.html">Works</a>
-        <a href="../cv.html">CV</a>
+  <nav>
+    <div>
+      <div class="nav-name">
+        <img src="../icon.jpg" alt="icon" class="nav-icon" />
+        Kristian Loumann
       </div>
-    </nav>
+      <div>
+        <a href="../index.html">Work</a>
+        <a href="../cv.html">Info</a>
+      </div>
+    </div>
+  </nav>
 
-    <h3 class="work-title">
-      Synapse
-    </h3>
-    
-    <p class="work-materials">
-      Cob (dirt, straw, water), brick
-    </p>
+  <div class="container">
+    <div class="content">
+      <div class="left-column">
+        <img src="synapse1.jpg" alt="synapse 1" class="work-image" />
+        <img src="synapse2.jpg" alt="synapse 2" class="work-image" />
+        <img src="synapse3.jpg" alt="synapse 3" class="work-image" />
+      </div>
 
-    <p class="performed-with">Rundgang, Peder Skrams Gade 2</p>
-
-    <p class="work-description">
-      
-    </p>
-
-    <img src="synapse1.jpg" alt="synapse1" class="work-image" />
-
-    <img src="synapse2.jpg" alt="synapse2" class="work-image" />
-
-    <img src="synapse4.jpg" alt="synapse4" class="work-image" />
-
-    <img src="synapse5.jpg" alt="synapse5" class="work-image" />
-
+      <div class="right-column">
+        <strong><p>Synapse, 2025</p></strong>
+        <p style="margin-top: -20px;">Cob (dirt, straw, water), brick</p>
+        <p>Rundgang, Peder Skrams Gade 2</p>
+        <p style="margin-top: -20px;">(Photos: optional credit if needed)</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
