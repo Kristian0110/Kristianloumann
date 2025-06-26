@@ -2,121 +2,189 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kristian Loumann</title>
+
+  <script data-goatcounter="https://kristianloumann.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+
   <link rel="icon" href="../icon.jpg" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       font-weight: 300;
       font-size: 18px;
       line-height: 1.6;
       color: #111;
-      background-color: #fff;
+      background-color: #fdfdfb;
     }
 
-    .container {
-      max-width: 900px;
-      padding: 40px 30px;
-      margin: 0 auto;
+    html, body {
+      overscroll-behavior: none;
     }
 
     nav {
+      background-color: white;
+      width: 100%;
+      font-family: 'Times';
+      padding: 10px 10px 0 0;
+      box-sizing: border-box;
+    }
+
+    nav > div {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 60px;
-      font-weight: 600;
+      justify-content: flex-start;
+      font-weight: 500;
       font-size: 21px;
+      gap: 30px;
+    }
+
+    .nav-name {
+      font-size: 16px;
+      font-weight: 510;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-icon {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    nav > div > div:last-child {
+      display: flex;
+      gap: 30px;
     }
 
     nav a {
       text-decoration: none;
-      color: #111;
-      transition: color 0.3s ease;
-      margin-left: 30px;
+      color: #000;
+      font-size: 16px;
+      padding: 1px 4px;
+      transition: box-shadow 0.2s ease;
     }
 
     nav a:hover {
-      color: #555;
-      text-decoration: none;
+      box-shadow: 0 0 0 0.7px black;
     }
 
-    .nav-name {
-      font-size: 26px;
-      font-weight: 510;
+    .container {
+      max-width: 100%;
+      padding: 40px 20px 0 20px;
+      margin: 0 auto;
     }
 
-    .work-images-columns {
-    column-count: 2;
-    column-gap: 30px;
-    width: fit-content;
-    max-width: 100%;
-    margin: 0 auto;
+    .content {
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+      align-items: flex-start;
     }
 
-    .work-images-columns img {
-    width: 350px;
-    display: block;
-    margin-bottom: 30px;
-    break-inside: avoid;
+    .left-column {
+      min-width: 250px;
+      max-width: 500px;
     }
-    
-    .work-title {
-      font-size: 18px;
-      margin-bottom: 0px;
-    } 
 
-    .work-materials {
-      font-size: 18px;
-      margin-top: 0;
-    } 
-
-    .location {
+    .right-column {
+      flex: 1;
+      padding-left: 85px;
       font-size: 14px;
-      margin-top: -15px;
-      margin-bottom: 20px;
+      margin-top: -18px;
+      max-width: 500px;
     }
 
-    .work-description {
-      font-size: 14px;
-      margin-top: 20px;
-      margin-bottom: 30px;
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 10px;
+      width: 130%;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+      break-inside: avoid;
+    }
+
+    .work-image {
+      width: 130%;
+      height: auto;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .left-column {
+        max-width: 100%;
+      }
+
+      .right-column {
+        padding-left: 0;
+      }
+
+      .image-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
+
+      .work-image {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <div class="nav-name">Kristian Loumann</div>
-      <div>
-        <a href="../index.html">Works</a>
-        <a href="../cv.html">CV</a>
+  <nav>
+    <div>
+      <div class="nav-name">
+        <img src="../icon.jpg" alt="icon" class="nav-icon" />
+        Kristian Loumann
       </div>
-    </nav>
+      <div>
+        <a href="../index.html">Work</a>
+        <a href="../cv.html">Info</a>
+      </div>
+    </div>
+  </nav>
 
-    <h3 class="work-title">
-      Transparency for The Public
-    </h3>
-    
-    <p class="work-materials">
-      Sugar, tape recorder, harddisk, silver plate, silk cloth, 2024
-    </p>
+  <div class="container">
+    <div class="content">
+      <div class="left-column">
+        <div class="image-grid">
+          <img src="TFTP2.jpeg" alt="TFTP2" />
+          <img src="TFTP5.jpeg" alt="TFTP5" />
+        </div>
 
-    <p class="location">Skjold Contemporary</p>
-    <p class="work-description">
-    </p>
+        <img src="TFTP3.jpg" alt="TFTP3" class="work-image" />
 
-  <div class="work-images-columns">
-    <img src="TFTP2.jpeg" alt="TFTP1" />
-    <img src="TFTP5.jpeg" alt="TFTP5" />
-    <img src="TFTP6.JPG" alt="TFTP6" />
-    <img src="TFTP4.jpg" alt="TFTP2" />
-    <img src="TFTP3.jpg" alt="TFTP3" />
-    <img src="TFTP1.jpeg" alt="TFTP1" />
-  </div>
-    
+        <div class="image-grid">
+          <img src="TFTP4.jpg" alt="TFTP4" />
+          <img src="TFTP1.jpeg" alt="TFTP1" />
+        </div>
+      </div>
+
+      <div class="right-column">
+        <strong><p>Transparency for The Public, 2024</p></strong>
+        <p style="margin-top: -20px;">Sugar, tape recorder, harddisk, silver plate, silk cloth</p>
+        <p>Skjold Contemporary</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
