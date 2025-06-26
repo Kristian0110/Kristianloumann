@@ -2,117 +2,161 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kristian Loumann</title>
 
   <script data-goatcounter="https://kristianloumann.goatcounter.com/count"
-  async src="//gc.zgo.at/count.js"></script>
-  
+    async src="//gc.zgo.at/count.js"></script>
+
   <link rel="icon" href="../icon.jpg" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       font-weight: 300;
       font-size: 18px;
       line-height: 1.6;
       color: #111;
-      background-color: #fff;
+      background-color: #fdfdfb;
     }
 
-    .container {
-      max-width: 900px;
-      padding: 40px 30px;
-      margin: 0 auto;
+    html, body {
+      overscroll-behavior: none;
     }
 
     nav {
+      background-color: white;
+      width: 100%;
+      font-family: 'Times';
+      padding: 10px 10px 0 0;
+      box-sizing: border-box;
+    }
+
+    nav > div {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 60px;
-      font-weight: 600;
+      justify-content: flex-start;
+      font-weight: 500;
       font-size: 21px;
+      gap: 30px;
+    }
+
+    .nav-name {
+      font-size: 16px;
+      font-weight: 510;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-icon {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    nav > div > div:last-child {
+      display: flex;
+      gap: 30px;
     }
 
     nav a {
       text-decoration: none;
-      color: #111;
-      transition: color 0.3s ease;
-      margin-left: 30px;
+      color: #000;
+      font-size: 16px;
+      padding: 1px 4px;
+      transition: box-shadow 0.2s ease;
     }
 
     nav a:hover {
-      color: #555;
-      text-decoration: none;
+      box-shadow: 0 0 0 0.7px black;
     }
 
-    .nav-name {
-      font-size: 26px;
-      font-weight: 510;
+    .container {
+      max-width: 100%;
+      padding: 40px 20px 0 20px;
+      margin: 0 auto;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+      align-items: flex-start;
+    }
+
+    .left-column {
+      min-width: 250px;
+      max-width: 500px;
+    }
+
+    .right-column {
+      flex: 1;
+      padding-left: 85px;
+      font-size: 14px;
+      margin-top: -18px;
+      max-width: 430px;
     }
 
     .work-image {
-      width: 100%;
+      width: 130%;
       height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
+      display: block;
     }
 
-    .work-title {
-      font-size: 18px;
-      margin-bottom: 0px;
-    } 
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        gap: 40px;
+      }
 
-    .work-materials {
-      font-size: 18px;
-      margin-top: 0;
-    } 
+      .left-column {
+        max-width: 100%;
+      }
 
-    .performed-with {
-      font-size: 14px;
-      margin-top: -15px;
-      margin-bottom: 20px;
-    }
-
-    .work-description {
-      font-size: 14px;
-      margin-top: 20px;
-      margin-bottom: 30px;
+      .right-column {
+        padding-left: 0;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <div class="nav-name">Kristian Loumann</div>
-      <div>
-        <a href="../index.html">Works</a>
-        <a href="../cv.html">CV</a>
+  <nav>
+    <div>
+      <div class="nav-name">
+        <img src="../icon.jpg" alt="icon" class="nav-icon" />
+        Kristian Loumann
       </div>
-    </nav>
+      <div>
+        <a href="../index.html">Work</a>
+        <a href="../cv.html">Info</a>
+      </div>
+    </div>
+  </nav>
 
-    <h3 class="work-title">
-      Control
-    </h3>
-    
-    <p class="work-materials">
-      Self-sewn straitjacket, rope, 2022
-    </p>
+  <div class="container">
+    <div class="content">
+      <div class="left-column">
+        <img src="control2.jpg" alt="control2" class="work-image" />
+        <img src="control3.jpg" alt="control3" class="work-image" />
+        <img src="control1.jpg" alt="control1" class="work-image" />
+      </div>
 
-    <p class="performed-with">Performed with Josefine Anderlo</p>
-
-    <p class="performed-with">FABRIKKEN for Kunst og Design (Photos: Niklas Adrian Vindelev)</p>
-
-    <p class="work-description">
-      The physical and psychological architecture of control is explored through a personal confrontation rooted in the artist's experience with OCD. A hand-sewn straitjacket and rope form a tight composition in which the body is both captured and defined by its own structure. The performance navigates the tension between strength and vulnerability, dominance and submission.
-    </p>
-
-    <img src="control2.jpg" alt="control2" class="work-image" />
-
-    <img src="control3.jpg" alt="control3" class="work-image" />
-
-    <img src="control1.jpg" alt="control1" class="work-image" />
-
+      <div class="right-column">
+        <strong><p>Control, 2022</p></strong>
+        <p style="margin-top: -20px;">Self-sewn straitjacket, rope</p>
+        <p>Performed with Josefine Anderlo</p>
+        <p style="margin-top: -20px;">FABRIKKEN for Kunst og Design (Photos: Niklas Adrian Vindelev)</p>
+        <p style="margin-top: 20px;">
+          The physical and psychological architecture of control is explored through a personal confrontation rooted in the artist's experience with OCD. A hand-sewn straitjacket and rope form a tight composition in which the body is both captured and defined by its own structure. The performance navigates the tension between strength and vulnerability, dominance and submission.
+        </p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
