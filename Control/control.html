@@ -94,6 +94,19 @@
       max-width: 500px;
     }
 
+    .image-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 130%;
+      margin-bottom: 10px;
+    }
+
+    .image-row .work-image {
+      width: 100%;
+      margin-bottom: 0;
+    }
+
     .right-column {
       flex: 1;
       padding-left: 85px;
@@ -142,8 +155,24 @@
   <div class="container">
     <div class="content">
       <div class="left-column">
+
         <img src="control2.jpg" alt="control2" class="work-image" />
+
+        <iframe 
+        width="130%" 
+        height="500" 
+        src="https://www.youtube.com/embed/Bmi7bNwCXBk" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+        </iframe>
+
+        <div class="image-row">
         <img src="control3.jpg" alt="control3" class="work-image" />
+        <img src="control5.jpg" alt="control5" class="work-image" />
+        </div>
+
         <img src="control1.jpg" alt="control1" class="work-image" />
       </div>
 
