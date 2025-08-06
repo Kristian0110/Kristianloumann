@@ -105,10 +105,14 @@
       display: block;
     }
 
+    .image-row img.work-image {
+      margin: 0;
+    }
+
     .iframe-container {
       position: relative;
       width: 100%;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      padding-bottom: 56.25%;
       height: 0;
       margin-bottom: 10px;
     }
@@ -125,6 +129,10 @@
       grid-template-columns: 1fr 1fr;
       gap: 10px;
       width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .left-column > .work-image:not(.image-row img) {
       margin-bottom: 10px;
     }
 
