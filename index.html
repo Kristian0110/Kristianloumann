@@ -79,7 +79,7 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 55px 5px;
       padding: 40px 20px;
     }
@@ -95,9 +95,8 @@
     .gallery-item img {
     width: 100%;
     max-width: 465px;
-    height: 325.5px;
+    height: auto;
     object-fit: cover;
-    display: block;
     transition: box-shadow 0.2s ease;
     }
 
@@ -113,6 +112,11 @@
       max-width: 465px;
       width: 100%;
       text-align: left;
+    }
+
+    .vertical-img {
+      height: auto;
+      object-fit: contain;
     }
 
     @media (max-width: 900px) {
@@ -143,17 +147,17 @@
   </nav>
     
   <div class="gallery">
-    
-    <a href="Fusion/Fusion.html" class="gallery-item">
+
+  <a href="Fusion/Fusion.html" class="gallery-item">
       <img src="Fusion/Fusion1.webp" alt="Fusion" />
       <div class="gallery-item-title">Fusion, 2026</div>
     </a>
-    
-    <a href="Øde/Ode.html" class="gallery-item">
-      <img src="Øde/Ode_01.webp" alt="Øde" />
+
+  <a href="Øde/Ode.html" class="gallery-item">
+      <img src="Øde/Ode_01.webp" alt="Øde" class="vertical-img"/>
       <div class="gallery-item-title">Øde, 2026</div>
     </a>
-    
+
     <a href="Post Awareness Confusions/postawarenessconfusions.html" class="gallery-item">
       <img src="Post Awareness Confusions/SECONDpac5.webp" alt="Post Awareness Confusions" />
       <div class="gallery-item-title">Post Awareness Confusions, 2025</div>
